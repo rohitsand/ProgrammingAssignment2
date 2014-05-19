@@ -6,15 +6,16 @@
 ## should retrieve the inverse from the cache.
 
 ## Unit test:
-## m1 = rbind(c(1, -1/4), c(-1/4, 1))
-## class(m1)
+## > source("cachematrix.r")
+## > m1 = rbind(c(1, -1/4), c(-1/4, 1))
+## > class(m1)
 ## [1] "matrix"
-## mcm <- makeCacheMatrix(m1)
-## cacheSolve(mcm)
+## > mcm <- makeCacheMatrix(m1)
+## > cacheSolve(mcm)
 ##          [,1]      [,2]
 ## [1,] 1.0666667 0.2666667
 ## [2,] 0.2666667 1.0666667
-## cacheSolve(mcm)
+## > cacheSolve(mcm)
 ## getting cached data
 ##          [,1]      [,2]
 ## [1,] 1.0666667 0.2666667
