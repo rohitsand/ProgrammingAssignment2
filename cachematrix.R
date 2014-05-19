@@ -24,8 +24,8 @@
 ## This function creates a special "matrix" object that 
 ## can cache its inverse. It returns a list of functions that can 
 ## get and set the matrix and its inverse
-makeCacheMatrix <- function(x = matrix()) 
 
+makeCacheMatrix <- function(x = matrix()) 
 {
 	m <- NULL
       set <- function(y) 
